@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Reiniel Allen Roman</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Reiniel Allen Roman</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./asssets/profile-pic-3.png" alt="Reiniel Roman profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Reiniel Allen Roman</h1>
+            <p class="section__text__p2">Gameplay Programmer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./asssets/My Resume.pdf')"
+                    >
+                    Download Resume
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                    >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials container">
+                <img 
+                src="./asssets/linkedin.png" 
+                alt="My Linkedin profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/raroman04/'">
+                <img 
+                src="./asssets/github.png" 
+                alt="My Github profile"
+                class="icon" 
+                onclick="location.href='https://github.com/Ymlidiwr'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./asssets/about-pic-2.png" 
+                alt="profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./asssets/experience.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>3 months in KMC Solutions<br />Intern IT On-Site Support</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./asssets/education.png" 
+                        alt="education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.S Computer Engineering<br>Holy Angel University 2020-2024</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a Computer Engineer with experience in Unity Engine and C#, specializing in gameplay programming. I have honed my skills through certifications in game development and programming. While I may not have industry experience yet, I am eager to apply my knowledge, contribute to a team, and continuously improve as a gameplay programmer.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./asssets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Gameplay Programmer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./asssets/checkmark.png" 
+                            alt="experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./asssets/checkmark.png" 
+                            alt="experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./asssets/checkmark.png" 
+                            alt="experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Level Designing</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Gameplay Programmer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./asssets/checkmark.png" 
+                            alt="experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./asssets/checkmark.png" 
+                            alt="experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./asssets/checkmark.png" 
+                            alt="experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./asssets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asssets/Karsus RPG.png" 
+                    alt="Project 1" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Karsus RPG</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Github
+                </button>
+                <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Demo
+                </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asssets/Dark Age Defense.png" 
+                    alt="Project 2" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Dark Age Defense</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Github
+                </button>
+                <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Demo
+                </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asssets/Ultimate Panzer.png" 
+                    alt="Project 3" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Ultimate Panzer</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Github
+                </button>
+                <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Demo
+                </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asssets/Kitchen Chaos.png" 
+                    alt="Project 4" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Kitchen Chaos</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Github
+                </button>
+                <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                    Demo
+                </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./asssets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./asssets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">raroman0412@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./asssets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/raroman04/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Reiniel Allen Roman. All Rights Preserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
